@@ -1,0 +1,23 @@
+[0.0062] Info: WP_Query results written to log
+[0.0002] Registered sizes: ["thumbnail","medium","large","post-thumbnail","full"]
+[0.0003] Meta indexed so far: 1 / 633
+[0.0013] Sample meta:
+{"width":320,"height":440,"file":"2015\/12\/beerstard.jpg","sizes":{"thumbnail":{"file":"beerstard-150x150.jpg","width":150,"height":150,"mime-type":"image\/jpeg"},"medium":{"file":"beerstard-218x300.jpg","width":218,"height":300,"mime-type":"image\/jpeg"}},"image_meta":{"aperture":0,"credit":"","camera":"","caption":"","created_timestamp":0,"copyright":"","focal_length":0,"iso":0,"shutter_speed":0,"title":"","orientation":1}}
+[0.0002] Meta indexed so far: 101 / 633
+[0.0002] Meta indexed so far: 201 / 633
+[0.0002] Meta indexed so far: 301 / 633
+[0.0002] Meta indexed so far: 401 / 633
+[0.0002] Meta indexed so far: 501 / 633
+[0.0002] Meta indexed so far: 601 / 633
+[0.0239] Meta indexed so far: 633 / 633
+[0.0283] Info: Valid and Invalid meta results written to log
+[0.0016] Info: Loaded attachments to memory [17 mb]
+[4.6034] Info: 11106 Images found [26.75 mb]
+[4.8370] Info: 11103 Invalid images found [27.75 mb]
+[5.1688] Info: Retrieved attachment images from DB [28 mb]
+[5.5917] Info: Backup meta results written to log [28.5 mb]
+[0.0621] Posts checked for used images 1/1
+[0.1558] Info: Invalid post image meta results written to log
+Warning: skipping script index because of too many image files
+[0.0659] Warning: skipping attachment index because of too many image files
+[0.1470] Info: Unreferenced image file results written to log

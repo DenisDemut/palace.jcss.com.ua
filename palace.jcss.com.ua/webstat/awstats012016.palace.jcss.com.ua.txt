@@ -1,0 +1,414 @@
+AWSTATS DATA FILE 7.1.1 (build 1.989)
+# If you remove this file, all statistics for date 201601 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.palace.jcss.com.ua.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2000                
+POS_TIME 2669                
+POS_VISITOR 7667                
+POS_DAY 8835                
+POS_DOMAIN 3529                
+POS_LOGIN 3765                
+POS_ROBOT 3920                
+POS_WORMS 4181                
+POS_EMAILSENDER 4312                
+POS_EMAILRECEIVER 4455                
+POS_SESSION 9662                
+POS_SIDER 9871                
+POS_FILETYPES 4590                
+POS_DOWNLOADS 4926                
+POS_OS 4974                
+POS_BROWSER 5166                
+POS_SCREENSIZE 5469                
+POS_UNKNOWNREFERER 5543                
+POS_UNKNOWNREFERERBROWSER 5630                
+POS_ORIGIN 5712                
+POS_SEREFERRALS 5854                
+POS_PAGEREFS 5998                
+POS_SEARCHWORDS 6146                
+POS_KEYWORDS 6298                
+POS_MISC 2331                
+POS_ERRORS 6357                
+POS_CLUSTER 3621                
+POS_SIDER_404 6478                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20160131084832 3141 819052 15461402838080
+FirstTime 0
+LastTime 20160131084832
+LastUpdate 20160131150111 0 0 0 0 0
+TotalVisits 118                 
+TotalUnique 23                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 24                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 315 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 33 33 10431 1 2 0
+1 30 30 1410 8 92 6685767
+2 30 30 1410 2 3 64162
+3 24 24 1128 1 1 0
+4 364 566 14695734 1 6 0
+5 589 593 2957095 0 2 0
+6 667 763 10281878 1 5 1150
+7 644 921 13652686 4 11 1150
+8 520 579 2408967 11 19 106517
+9 246 2450 12752804 13 30 328798
+10 303 1987 24550170 33 65 526097
+11 279 1506 23796645 7 28 126416
+12 473 3290 21328706 6 342 4812804
+13 872 3264 17893953 23 35 105644
+14 647 5509 74767145 15 57 156251
+15 756 7073 53257775 23 85 188958
+16 802 9190 88061243 6 37 143248
+17 878 8541 38351110 7 44 341321
+18 978 7691 145123162 38 135 1302099
+19 974 5602 57380963 36 58 379000
+20 969 3529 16444943 14 21 135948
+21 958 6588 28222987 17 29 265349
+22 726 5365 83499473 24 54 312313
+23 291 1122 5937803 5 12 127684
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 13053 76246 735379621
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 4
+wordpress 108 2 20160131041311 0
+favicon 27 1455093 20160130093001 0
+yandex 1 26 20160122154031 1
+robot 1 57846 20160105123624 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 13
+css 17989 26040941 0 0
+png 7789 24374321 0 0
+woff 249 5703192 0 0
+woff2 764 3692007 0 0
+json 7 418708 0 0
+swf 7 6918 0 0
+php 11146 226384475 0 0
+html 880 49156573 0 0
+jpg 8193 350628907 0 0
+js 25123 31453835 0 0
+jpeg 3489 16619602 0 0
+gif 580 864259 0 0
+svg 30 35883 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 8
+linuxandroid 83 6
+winnt 256 60
+linuxubuntu 394 39
+winvista 81 7
+linux 64425 9131
+win7 4640 353
+win8 2382 410
+macosx7 3985 3047
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 11
+chrome46.0.2490.76 81 5
+chrome47.0.2526.106 703 101
+chrome47.0.2526.111 1806 184
+firefox43.0 65559 6998
+netscape5.0 13 13
+firefox44.0 4609 2878
+android 2 1
+chrome48.0.2564.82 94 7
+chrome39.0.2171.95 2 1
+chrome48.0.2564.97 640 252
+safari6.1.6 2737 2613
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 124 125
+From1 0 0
+From2 0 0
+From3 0 0
+From4 12929 76121
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+302 102 0
+503 1 288
+301 3 243
+404 527 7905661
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 13
+/wp-content/themes/rt_plethora_wp/admin/presets/post.png 72 http://palace.jcss.com.ua/wp-admin/admin.php
+/f/history/sculptural_100.jpg 17 http://palace.jcss.com.ua/wp-admin/post.php
+/f/history/staing_11.jpg 24 http://palace.jcss.com.ua/wp-admin/post.php
+/js/main.js 1 http://palace.jcss.com.ua/
+/wp-content/var/www/d.denis/data/www/palace.jcss.com.ua/ 48 http://palace.jcss.com.ua/
+/f/history/ant_1.jpg 102 http://palace.jcss.com.ua/wp-admin/post.php
+/f/history/sculptural_99.jpg 18 http://palace.jcss.com.ua/wp-admin/post.php
+/f/history/staing_12.jpg 23 http://palace.jcss.com.ua/wp-admin/post.php
+/f/history/ant_3.jpg 102 http://palace.jcss.com.ua/wp-admin/post.php
+/f/history/carnival_85.jpg 14 http://palace.jcss.com.ua/wp-admin/admin.php
+/StainedGlass 3 -
+/js/readmore.min.js 1 http://palace.jcss.com.ua/
+/f/history/ant_2.jpg 102 http://palace.jcss.com.ua/wp-admin/post.php
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 24
+185.11.29.92 9170 64819 493941790 20160131000923
+76.218.218.7 3027 3618 37401256 20160131084832 20160131041310 /wp-admin/admin-ajax.php
+46.172.158.221 363 2222 60779658 20160129163812
+193.227.209.86 218 3953 83674810 20160129151528
+49.249.165.193 69 169 7919010 20160131061928
+46.164.174.136 47 158 6652919 20160105125720
+14.195.73.175 28 130 8740925 20160131075106 20160131073053 /wp-admin/admin-ajax.php
+46.165.196.12 27 46 1074458 20160130055030
+176.104.3.21 24 373 7284820 20160112221704
+31.148.253.65 18 102 6947447 20160129184607
+82.192.95.82 1 6 324702 20160130100815
+40.78.146.128 2 2 62185 20160131060926
+104.45.18.178 4 4 30466 20160130100820
+166.137.242.17 2 83 64181 20160125190945
+176.38.167.18 13 98 7105286 20160117192003
+119.147.146.189 1 2 246054 20160130101121
+104.209.188.207 4 4 66361 20160129174050
+23.101.61.176 3 3 28205 20160129223802
+107.77.92.48 18 284 6343024 20160111224718
+46.165.220.219 1 6 324702 20160130100751
+188.230.106.129 5 81 3011918 20160105194542
+101.226.89.121 0 1 1521 
+194.126.182.124 7 81 3351037 20160108144906
+180.153.161.55 1 1 2886 20160130100815
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 28
+20160104 6 80 3080251 1
+20160105 365 1930 81903572 8
+20160106 695 5740 93323587 3
+20160107 672 4829 25583908 5
+20160108 224 549 7916579 4
+20160109 151 184 1373403 4
+20160110 23 32 5087 1
+20160111 729 8370 89673780 8
+20160112 892 10621 37707452 9
+20160113 562 9890 17330513 2
+20160114 40 820 2133628 3
+20160115 388 4488 70419057 5
+20160116 37 945 801943 1
+20160117 46 466 7584296 2
+20160118 1014 10547 74541290 7
+20160119 194 1599 13044671 2
+20160120 22 380 13941001 1
+20160121 56 574 11927897 4
+20160122 108 308 785660 3
+20160123 227 353 2514806 2
+20160124 327 1829 13787814 5
+20160125 25 245 7305640 4
+20160126 238 1446 6600765 4
+20160127 48 167 6892720 3
+20160128 148 1575 9744008 4
+20160129 3085 5132 93067627 11
+20160130 12 24 903017 7
+20160131 2719 3123 41485649 5
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 37
+5mn-15mn 13
+30s-2mn 5
+2mn-5mn 3
+0s-30s 40
+15mn-30mn 7
+30mn-1h 11
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 84
+/wp-admin/admin-ajax.php 10032 41484984 40 53
+/wp-content/plugins/gantry/assets/jui/fonts/font-awesome4/fontawesome-webfont.woff2 764 3692007 0 21
+/ 598 37123062 46 9
+/wp-admin/admin.php 297 56695647 1 0
+/wp-admin/load-scripts.php 149 7677308 0 0
+/wp-admin/edit.php 147 17559268 0 0
+/wp-admin/post.php 93 16147998 0 0
+/wp-admin/widgets.php 72 52023272 1 0
+/wp-admin/media-upload.php 70 3971664 0 0
+/wp-content/plugins/gantry/assets/jui/fonts/font-awesome4/fontawesome-webfont.woff 64 2841992 0 15
+/wp-admin/media-new.php 1 41401 0 0
+/category/murals/ 12 432641 0 0
+/wp-admin/post-new.php 8 1354500 0 0
+/wp-admin/load-styles.php 62 4182404 0 0
+/wp-admin/index.php 2 125787 0 0
+/2011/06/19/designer-glass/ 4 180425 0 0
+/category/uncategorized/page/2/ 5 264246 0 2
+/2011/06/19/decorative-glass/ 4 176002 0 0
+/wp-admin/users.php 1 51677 0 0
+/wp-admin/export.php 3 3926312 0 0
+/2011/06/19/glass-tile/ 3 130163 0 0
+/content/page/6/ 1 35369 0 0
+/content/ 1 30224 0 0
+/content/page/7/ 1 33428 0 0
+/wp-admin/async-upload.php 22 51745 0 0
+/contact/ 39 1622167 3 2
+/wp-admin/tools.php 2 81898 0 0
+/wp-includes/js/tinymce/skins/lightgray/fonts/tinymce.woff 3 22992 0 0
+/wp-admin/ 8 522250 0 0
+/2015/12/18/acid-etched-glass-2/ 1 40177 0 0
+/wp-admin/plugins.php 11 737343 0 0
+/2011/06/19/glass-door/ 1 43738 0 0
+/wp-content/plugins/gantry/admin/widgets/fonts/js/google-fonts.json 7 418708 0 0
+/2015/12/18/am-1005t-2/ 1 33238 0 0
+/home/contact/ 1 61347 0 0
+/category/tables/ 7 247737 0 0
+/wp-admin/about.php 1 50944 0 0
+/wp-admin/nav-menus.php 36 10666606 1 0
+/2015/12/18/am-1015y/ 2 80146 0 0
+/category/showers/ 1 30592 0 0
+/content/page/2/ 1 30681 0 0
+/2011/06/19/art-glass-2/ 1 43430 0 0
+/2015/12/18/stained-glass-2/ 1 42584 0 0
+/2015/12/18/glass-assculptural-art/ 1 38388 0 0
+/wp-includes/js/tinymce/wp-tinymce.php 5 681220 0 0
+/wp-admin/import.php 1 41787 0 0
+/2015/12/18/glass-assculptural-art-2/ 2 76803 0 0
+/wp-admin/customize.php 4 3083911 0 0
+/wp-admin/upload.php 12 1033757 0 0
+/wp-login.php 39 102168 17 12
+/category/windows/ 56 1994990 1 0
+/2011/06/19/architectural-glass/ 2 91396 0 0
+/category/doors/ 4 152463 0 0
+/wp-admin/options-reading.php 3 127312 0 0
+/wp-admin/plugin-editor.php 4 190092 0 0
+/wp-content/themes/rt_plethora_wp/fonts/merriweathersans-bolditalic-webfont.woff 1 30300 0 0
+/wp-content/themes/rt_plethora_wp/fonts/merriweathersans-regular-webfont.woff 60 913648 1 0
+/wp-content/plugins/gantry/assets/jui/fonts/IcoMoon.woff 1 18140 0 0
+/wp-admin/theme-editor.php 24 1172445 1 0
+/blog/ 56 3139253 1 0
+/wp-content/themes/rt_plethora_wp/fonts/merriweathersans-italic-webfont.woff 60 950912 0 0
+/wp-content/plugins/wp_roksprocket/admin/assets/js/ZeroClipboard10.swf 7 6918 0 0
+/2015/12/18/anti-reflective-glass-2/ 3 111653 0 0
+/wp-admin/edit-tags.php 23 1971721 0 0
+/wp-admin/plugin-install.php 2 179817 0 0
+/2011/06/19/etched-glass/ 2 86793 0 0
+/2015/12/18/am-1016b-2/ 10 353276 0 0
+/category/cabinets/ 3 116839 1 0
+/category/partitions/ 4 144008 0 0
+/2011/06/19/frameless-glass/ 1 43510 0 0
+/wp-admin/profile.php 2 104057 0 0
+/wp-content/themes/rt_plethora_wp/fonts/merriweathersans-bold-webfont.woff 60 925208 0 0
+/wp-admin/update.php 5 161745 0 0
+/category/stairs/ 2 71840 0 0
+/2015/12/18/am-1024-2/ 1 33795 0 0
+/2011/06/19/shower-glass/ 2 89504 0 0
+/category/uncategorized/ 7 333321 2 0
+/2015/12/18/stained-glass/ 3 128417 0 0
+/2015/12/18/am-1011t-2/ 4 139471 0 0
+/wp-admin/themes.php 5 278057 0 0
+/category/windows/page/2/ 23 762935 2 2
+/wp-admin/options-general.php 3 209707 0 0
+/2011/06/19/custom-glass/ 1 44271 0 0
+/wp-admin/update-core.php 5 215921 0 0
+END_SIDER

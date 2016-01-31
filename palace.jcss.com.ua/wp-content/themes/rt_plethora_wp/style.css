@@ -1,0 +1,162 @@
+/*
+Theme Name: Plethora
+Theme URI: http://www.rockettheme.com
+Description: RocketTheme Plethora Theme for Wordpress
+Version: 1.2
+Author: RocketTheme, LLC
+Author URI: http://www.rockettheme.com
+*/
+
+/*custom*/
+body {
+    background: url("http://palace.jcss.com.ua/wp-content/uploads/2016/01/body-bg1.jpg") repeat scroll 0px 0px;
+}
+
+#rt-header-surround {
+    background: transparent url("http://palace.jcss.com.ua/wp-content/uploads/2016/01/bg-header.png") repeat-x scroll 0px 0px;
+}
+.gf-menu {
+    margin: 40px auto 0px;
+}
+#roksearch_search_str {
+    margin-top: 40px !important;
+    background: #EBEBEB !important;
+    color: #666 !important;
+}
+/*bottom slider fade*/
+.sprocket-strips-image-container::before {
+    background: transparent none repeat scroll 0% 0% !important;
+}
+.sprocket-strips-item:hover .sprocket-strips-image-container::before {
+    background: rgba(40, 79, 204, 0.7) none repeat scroll 0% 0% !important;
+}
+/*manual phone*/
+.manual-phone {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-transform: uppercase;
+    color: #f0f0f0;
+    font-size: 14px;
+    padding-right: 15px;
+    font-family: "merriweathersans";
+}
+/*download catalog*/
+.catalog {
+    margin: 0 15px;
+}
+.catalog-left {
+    float: left;
+}
+.catalog-right {
+    float: right;
+}
+.catalog-right a {
+    display: block;
+    text-align: right;
+    color: #808080;
+    margin-bottom: 25px;
+}
+.catalog-right a:hover {
+    opacity: .7;
+}
+/*Info section*/
+.info-section {
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+}
+.info-section a {
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #FFF;
+    background-color: #284FCC;
+    display: inline-block !important;
+    padding: 5px 10px;
+    line-height: normal;
+    font-weight: normal;
+    font-size: 85%;
+    border: 1px solid transparent;
+    background-image: none;
+    text-shadow: none;
+    text-decoration: none;
+    width: 8% !important;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in 0s;
+}
+.info-section a:hover {
+    opacity: .7;
+}
+.info-section article {
+    margin: 15px 0;
+    max-height: 11em;
+}
+.info-block, .info-section article {
+    clear: both;
+    content: '';
+    display: table;
+}
+.info-block li {
+    line-height: 20px;
+}
+.info-block li p {
+    text-align: justify;
+}
+.info-block li:first-child {
+    list-style-type: none;
+}
+/*Main Top Section*/
+.sprocket-lists-item .sprocket-padding {
+    padding: 9px !important;
+}
+.sprocket-lists-image {
+    width: 19.7% !important;
+}
+/*.sprocket-lists .sprocket-lists-item .sprocket-padding {
+    height: 93px;
+}*/
+/*footer links*/
+#rt-copyright {
+    background-color: #1C1D1F !important;
+}
+.related-links {
+    text-align: center;
+}
+.related-links a {
+    text-decoration: underline;
+    margin: 0 5px;
+    color: #808080;
+    font-family: "merriweathersans";
+}
+.related-links a:hover {
+    text-decoration: none;
+    opacity: .7;
+}
+/*end custom*/
+
+.overview {
+    width: 100% !important;
+}
+.layout-scroller ul {
+    list-style: outside none none !important;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.fp-roksprocket-features-showcase .layout-scroller .sprocket-features-pagination li {
+    padding: 18.5px 20px;
+    width: 100%;
+}
+.box3.nomarginall.fp-roksprocket-tabs-showcase.roksprocket_options.widget {
+    height: 522px;
+}
+.sprocket-features-img-container img {
+    width: 100%;
+}
+
+.sprocket-features-pagination li {
+    background: #8ba1e8 none repeat scroll 0 0;
+}

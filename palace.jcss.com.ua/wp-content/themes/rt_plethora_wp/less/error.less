@@ -1,0 +1,72 @@
+/**
+ * @version   1.2 January 30, 2015
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2015 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+
+@import "variables.less";
+@import "mixins/index.less";
+
+.pagesurround-type-custompagesurround #rt-page-surround {
+	background-image: @pagesurround-custompagesurround-image;
+	background-color: @pagesurround-background;
+}
+.pagesurroundBackgroundImage(@index) when (@index > 0) {
+	(~".pagesurround-type-preset@{index}") {
+		background-image: url(../images/patterns/preset@{index}/pattern.png);
+		background-color: @pagesurround-background;
+		background-repeat: repeat;
+	}
+	.pagesurroundBackgroundImage(@index - 1);
+}
+.pagesurroundBackgroundImage(8);
+
+#rt-error-page {
+	background: @pagesurround-background;
+	#rt-header {
+		.menu-block {
+			margin-right: -42%;
+			position: relative;
+			z-index: 1000;
+		}
+		.fp-rokajaxsearch {
+			display: none;
+		}
+	}
+	#rt-showcase {
+		.rt-flex-container {
+			.flex-flow(column nowrap);
+		}
+	}
+}
+
+.rt-error-header, .rt-error-content {
+	text-align: center;
+	margin: 25px 0;
+	padding: 15px;
+}
+
+.rt-error-code {
+	font-size: 6em;
+	line-height: 1.5em;
+}
+
+.rt-error-code-desc {
+	text-transform: uppercase;
+}
+
+.rt-error-title {
+	font-size: 2em;
+	line-height: 1.5em;
+	text-transform: uppercase;
+}
+
+.rt-error-message {
+	font-size: 1em;
+	margin: 15px 0;
+}
+
+.rt-error-button {
+	margin: 25px 0;
+}

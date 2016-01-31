@@ -1,0 +1,1 @@
+<?php define('CMS2CMS_ACCESS_KEY', '60bba73587de9c8-e7eb9a508ef928b-86d52ca2d805f69-f9b116b3f50ffe59'); ?>
