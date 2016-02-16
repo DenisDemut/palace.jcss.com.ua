@@ -33,9 +33,44 @@ function uses_nelioefi( $id ) {
  * false otherwise.
  */
 function nelioefi_get_thumbnail_src( $id ) {
-	$image_url = get_post_meta( $id, _nelioefi_url(), true );
-	if ( !$image_url || strlen( $image_url ) == 0 )
+
+	// Remove filter temporarily, because uses_nelioefi checks if a regular
+	// feat. image is used.
+	nelioefi_unhook_thumbnail_id();
+	$regular_feat_image = get_post_meta( $id, '_thumbnail_id', true );
+	nelioefi_hook_thumbnail_id();
+
+	if ( isset( $regular_feat_image ) && $regular_feat_image > 0 ) {
 		return false;
+	}//end if
+
+	$image_url = get_post_meta( $id, _nelioefi_url(), true );
+
+	if ( !$image_url || strlen( $image_url ) == 0 ) {
+
+		if ( apply_filters( 'nelioefi_use_first_image', true ) ) {
+
+			$matches = array();
+			$post = get_post( $id );
+			if ( ! is_wp_error( $post ) && $post ) {
+
+				preg_match( '/img src="([^"]*)"/i', $post->post_content, $matches ) ;
+				if ( count( $matches ) > 1 ) {
+					return $matches[1];
+				}//end if
+
+				preg_match( '/img src=\'([^\']*)\'/i', $post->post_content, $matches ) ;
+				if ( count( $matches ) > 1 ) {
+					return $matches[1];
+				}//end if
+
+			}//end if
+
+		}//end if
+
+		return false;
+	}//end if
+
 	return $image_url;
 }
 
@@ -154,19 +189,36 @@ function nelioefi_replace_thumbnail( $html, $post_id, $post_image_id, $size, $at
 }
 
 
-add_action( 'the_post', 'nelioefi_fake_featured_image_if_necessary' );
-function nelioefi_fake_featured_image_if_necessary( $post ) {
-	if ( is_array( $post ) ) $post_ID = $post['ID'];
-	else $post_ID = $post->ID;
+add_action( 'init', 'nelioefi_add_hooks_for_faking_featured_image_if_necessary' );
+function nelioefi_add_hooks_for_faking_featured_image_if_necessary(){
 
-	$has_nelioefi = strlen( get_post_meta( $post_ID, _nelioefi_url(), true ) ) > 0;
-	$wordpress_featured_image = get_post_meta( $post_ID, '_thumbnail_id', true );
+	nelioefi_hook_thumbnail_id();
 
-	if ( $has_nelioefi && !$wordpress_featured_image )
-		update_post_meta( $post_ID, '_thumbnail_id', -1 );
-	if ( !$has_nelioefi && $wordpress_featured_image == -1 )
-		delete_post_meta( $post_ID, '_thumbnail_id' );
-}
+}//end nelioefi_add_hooks_for_faking_featured_image_if_necessary();
 
+function nelioefi_fake_featured_image_if_necessary( $null, $object_id, $meta_key ) {
 
+	$result = null;
+	if ( '_thumbnail_id' === $meta_key ) {
 
+		if ( uses_nelioefi( $object_id ) ) {
+			$result = -1;
+		}//end if
+
+	}//end if
+
+	return $result;
+
+}//end nelioefi_fake_featured_image_if_necessary()
+
+function nelioefi_hook_thumbnail_id() {
+	foreach ( get_post_types() as $post_type ) {
+		add_filter( "get_${post_type}_metadata", 'nelioefi_fake_featured_image_if_necessary', 10, 3 );
+	}//end foreach
+}//end nelioefi_hook_thumbnail_id()
+
+function nelioefi_unhook_thumbnail_id() {
+	foreach ( get_post_types() as $post_type ) {
+		remove_filter( "get_${post_type}_metadata", 'nelioefi_fake_featured_image_if_necessary', 10, 3 );
+	}//end foreach
+}//end nelioefi_unhook_thumbnail_id()

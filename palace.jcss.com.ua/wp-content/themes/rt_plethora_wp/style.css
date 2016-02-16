@@ -7,13 +7,67 @@ Author: RocketTheme, LLC
 Author URI: http://www.rockettheme.com
 */
 
+
+
+.overview {
+    width: 100% !important;
+}
+.layout-scroller ul {
+    list-style: outside none none !important;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.fp-roksprocket-features-showcase .layout-scroller .sprocket-features-pagination li {
+    padding: 18.5px 20px;
+    width: 100%;
+}
+.box3.nomarginall.fp-roksprocket-tabs-showcase.roksprocket_options.widget {
+    height: 522px;
+}
+.sprocket-features-img-container img {
+    width: 100%;
+}
+
+.sprocket-features-pagination li {
+    background: #8ba1e8 none repeat scroll 0 0;
+}
+
+
 /*custom*/
 body {
-    background: url("http://palace.jcss.com.ua/wp-content/uploads/2016/01/body-bg1.jpg") repeat scroll 0px 0px;
+    background: url("../../uploads/2016/01/body-bg1.jpg") repeat scroll 0px 0px;
 }
 
 #rt-header-surround {
-    background: transparent url("http://palace.jcss.com.ua/wp-content/uploads/2016/01/bg-header.png") repeat-x scroll 0px 0px;
+    background: transparent url("../../uploads/2016/01/bg-header.png") repeat-x scroll 0px 0px;
+}
+#rt-header {
+    background: url(../../uploads/2016/02/bg-header-content_2.png) 0 0 transparent repeat-x;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: left bottom;
+}
+/*hide HOME text*/
+/*#rt-main {
+    display: none;
+}*/
+#rt-footer-surround {
+    background-image: url(../../uploads/2016/02/footer-bg.jpg);
+    -webkit-background-size: cover;
+    background-size: contain;
+}
+
+/* Showcase image height */
+.sprocket-features-img-list {
+    max-height: 522px;
+}
+.sprocket-features-img-container img {
+    height: 677px !important;
+}
+.layout-scroller .sprocket-features-content {
+    display: none;
 }
 .gf-menu {
     margin: 40px auto 0px;
@@ -30,16 +84,23 @@ body {
 .sprocket-strips-item:hover .sprocket-strips-image-container::before {
     background: rgba(40, 79, 204, 0.7) none repeat scroll 0% 0% !important;
 }
-/*manual phone*/
+/*manual text header*/
 .manual-phone {
     position: absolute;
     right: 0;
-    top: 0;
+    bottom: 12px;
     text-transform: uppercase;
     color: #f0f0f0;
-    font-size: 14px;
-    padding-right: 15px;
+    font-size: 20px;
     font-family: "merriweathersans";
+}
+.logo-text {
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 2px 5px 5px #12496C;
+    position: absolute;
+    top: 79px;
+    left: 57px;
 }
 /*download catalog*/
 .catalog {
@@ -54,7 +115,7 @@ body {
 .catalog-right a {
     display: block;
     text-align: right;
-    color: #808080;
+    color: #ffffff;
     margin-bottom: 25px;
 }
 .catalog-right a:hover {
@@ -118,8 +179,15 @@ body {
     height: 93px;
 }*/
 /*footer links*/
+#rt-footer {
+    box-shadow: white 0px 2px 4px;
+}
 #rt-copyright {
-    background-color: #1C1D1F !important;
+    background-color: transparent !important;
+}
+.custom-copyright {
+    font-size: 12px;
+    color: #fff;
 }
 .related-links {
     text-align: center;
@@ -127,36 +195,59 @@ body {
 .related-links a {
     text-decoration: underline;
     margin: 0 5px;
-    color: #808080;
+    color: #ffffff;
     font-family: "merriweathersans";
 }
 .related-links a:hover {
     text-decoration: none;
     opacity: .7;
 }
-/*end custom*/
-
-.overview {
-    width: 100% !important;
-}
-.layout-scroller ul {
-    list-style: outside none none !important;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width: 100%;
-}
-.fp-roksprocket-features-showcase .layout-scroller .sprocket-features-pagination li {
-    padding: 18.5px 20px;
-    width: 100%;
+.fp-roksprocket-features-showcase .layout-scroller #sprocket-features-scroller-scrollbar .viewport {
+    height: 700px !important;
 }
 .box3.nomarginall.fp-roksprocket-tabs-showcase.roksprocket_options.widget {
-    height: 522px;
+    height: 691px;
 }
-.sprocket-features-img-container img {
+/*Main Menu*/
+.menu-block {
+    float: left;
+    /*height: 50px;*/
+}
+.gf-menu {
+    margin-top: 0;
+    padding-left: 45px;
+}
+.rt-logo-block {
+    padding: 0;
+}
+/*.gf-menu > li {
+    background-image: url(../../uploads/2016/02/menu-items-hover_a.png);
+    -webkit-background-size: cover;
+        background-size: cover;
+}*/
+.gf-menu > li > a {
+    background: url(../../uploads/2016/02/menu-items-shadow_li.png) no-repeat;
+    color: #fff !important;
+}
+.gf-menu  li a:hover {
+    color: #1c1d1f !important;
+}
+.gf-menu li:first-child  a {
+    background-image: none;
+}
+/*Contact Form 7*/
+#wpcf7-f9596-o1 input {
     width: 100%;
+    height: 40px;
 }
-
-.sprocket-features-pagination li {
-    background: #8ba1e8 none repeat scroll 0 0;
+#wpcf7-f9596-o1 textarea {
+    width: 100%;
+    height: auto;
 }
+/*.sprocket-tabs-panel:last-child a {
+    background-color: red;
+}*/
+#wpcf7-f9596-o1 + a {
+    display: none;
+}
+/*end custom*/

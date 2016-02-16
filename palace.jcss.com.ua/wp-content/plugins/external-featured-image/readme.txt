@@ -4,7 +4,7 @@ Donate link: http://neliosoftware.com
 Tags: external, url, featured image, featured, featured images, image
 Requires at least: 3.3
 Tested up to: 4.3
-Stable tag: 1.2.1
+Stable tag: 1.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,15 +17,12 @@ Are you using an external service for storing your images? Then you'd probably
 like to use those images as featured images for your pages and posts. This
 plugin lets you do this easily!
 
+And even better! If you don't specify any featured image, the plugin will use
+the first image available in the post.
 
 **Notice** Sometimes, external featured images are not visible. Please, check
 the FAQ section to discover how to solve the issue.
 
-**Notice** After all the issues that 1.3.x series have caused, I've decided to
-go back to 1.2.0 and make it the stable version of the plugin. For those of you
-who that version worked, you can download it from the
-[Developers](https://wordpress.org/plugins/external-featured-image/developers/)
-tab.
 
 = Featured On =
 
@@ -108,6 +105,29 @@ some helper functions that will ease the "tuning" of the theme (check the file
 includes/nelio-efi-main.php to know them and review their documentation).
 
 
+= How does the plugin find the first image linked in a post? =
+
+If you don't specify any featured image, the plugin will use the first image
+included in your post. In order to find the image, it looks for `img` tags that
+looks like the following:
+
+`
+&lt;img src="image-url-here" ... /&gt;
+`
+
+The `img` tag and the `src` attribute have to be "together". Otherwise, our
+plugin won't be able to find the featured image.
+
+
+= I don't want to use the first image in a post as the featured image. How do I change this? =
+
+That's quite easy. Simply add the following line in your theme's `functions.php` file:
+
+`
+add_filter( 'nelioefi_use_first_image', '__return_false' );
+`
+
+
 == Screenshots ==
 
 1. **External Featured Image with URL.** Easily set the featured image of a
@@ -115,6 +135,17 @@ post by using the image's URL only!
 
 
 == Changelog ==
+
+= 1.4.1 (January 28, 2016) =
+* **Fix**. Using first image as the featured image is now working properly.
+
+
+= 1.4.0 (January 27, 2016) =
+* **New Funcionality!** By default, the plugin will use the first image that
+appears in the content of your posts if you didn't specify any external
+featured image. Note there's a new filter to change this behavior
+(`nelioefi_use_first_image`); you can read more about it in the FAQ section.
+
 
 = 1.2.0 =
 * Bug fix: Quick Edit (and possibly other edits) a post removed the external
@@ -171,6 +202,6 @@ tries to scale and crop the external image for its proper display.
 
 == Upgrade Notice ==
 
-= 1.2.0 =
-Bug fix when quick editing a post. Some minor improvements.
+= 1.4.1 =
+Auto set featured image.
 

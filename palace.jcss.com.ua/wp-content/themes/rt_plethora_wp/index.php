@@ -64,7 +64,10 @@ $gpreset = str_replace(' ','',strtolower($gantry->get('name')));
 				<div id="rt-header">
 					<div class="rt-flex-container">
 						<?php echo $gantry->displayModules('header','standard','standard'); ?>
+						<!--  Custom header text -->
 						<h6 class="manual-phone">call us: 1 (800) 959-1008</h6>
+						<span class="logo-text">Lorem ipsum dolor</span>
+						<!--  End custom header text -->
 						<div class="clear"></div>
 					</div>
 				</div>
